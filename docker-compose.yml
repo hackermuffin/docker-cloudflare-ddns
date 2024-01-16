@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  cloudflare-ddns:
+    build: .
+    environment:
+      CLOUDFLARE_API_TOKEN: $CLOUDFLARE_API_TOKEN
+      CLOUDFLARE_DDNS_URL: $CLOUDFLARE_DDNS_URL
+
